@@ -160,7 +160,10 @@ return [
 'attributes' => [
     'name' => 'A név',
     'email' => 'Az email',
-    'password' => 'A jelszó'
+    'password' => 'A jelszó',
+    'birth_place'=>'A születési hely',
+    'birth_date'=>'A születési dátum',
+    'mother_name'=>'Az édesanya'
 ],
 
 

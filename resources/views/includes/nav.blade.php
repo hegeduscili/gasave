@@ -13,6 +13,10 @@
                     <a class="nav-link active" aria-current="page" href="{{ route('profile') }}">{{ __('Home') }}</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" href="{{ route('birthdata') }}" tabindex="-1"
+                        aria-disabled="true">{{ __('User information') }}</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="{{ route('logout') }}" tabindex="-1"
                         aria-disabled="true">{{ __('Logout') }}</a>
                 </li>

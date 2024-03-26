@@ -9,6 +9,7 @@ use App\Models\User;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Hash;
+use App\Models\BirthData;
 
 
 class UserController extends Controller
@@ -16,17 +17,13 @@ class UserController extends Controller
     function register(RegisterRequest $request)
     {
 
-        $validated = $request->validate([
-            'name' => 'required|string|max:255',
-            'email' => 'required|string|email|max:255|unique:users',
-            'password' => 'required|string|min:4|confirmed',
-        ]);
+        $validated = $request->validate(Config::get('userdata.basic'));
 
         $validated['password'] = bcrypt($validated['password']);
 
         User::create($validated);
 
-        return redirect()->route('profile')->with('success', __('Successfully Registered'));
+        return redirect()->route('login')->with('success', __('Successfully Registered!'));
     }
 
     function login(LoginRequest $request)
@@ -61,11 +58,11 @@ class UserController extends Controller
     {
         $user = User::find(Auth::user()->id);
 
-        Config::set('userdata.email', Config::get('userdata.email') . ',' . Auth::user()->id);
+        Config::set('userdata.basic.email', Config::get('userdata.basic.email') . ',' . Auth::user()->id);
 
-        Config::set('userdata.password', 'nullable|min:3|max:20|confirmed');
+        Config::set('userdata.basic.password', 'nullable|min:3|max:20|confirmed');
 
-        $validated = $request->validate(Config::get('userdata'));
+        $validated = $request->validate(Config::get('userdata.basic'));
 
         $user->update($request->only(['name', 'email']));
 
@@ -74,5 +71,17 @@ class UserController extends Controller
             $user->update(['password' => $hashedPassword]);
         }
         return redirect()->back()->with('success', __('Successful modification!'));
+    }
+
+    function birthdataProcess(Request $request)
+    {
+
+        $validated = $request->validate(Config::get('userdata.information'));
+
+       // User::find(Auth::user()->id)->birthdata()->create($validated);
+
+       BirthData::updateOrCreate(['user_id' => Auth::user()->id], $validated);
+
+       return redirect()->back()->with('success', __('Operation successful!'));
     }
 }

@@ -55,5 +55,12 @@ Route::group(['middleware' => [SetLang::class]], function () {
         })->name('edituser');
 
         Route::post('/edituser', [UserController::class, 'profileProcess'])->name('post.profile');
+
+        Route::get('/birthdata', function () {
+            return view('birthdata');
+        })->name('birthdata');
+
+        Route::post('/birthdata', [UserController::class, 'birthdataProcess'])->name('post.birthdata');
+
     });
 });

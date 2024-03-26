@@ -20,5 +20,15 @@
     "Edit your Profile":"Profil módosítása",
     "You haven't registered yet!":"Még nem regisztráltál!",
     "Successful modification!":"Sikeres módosítás!",
-    "Error occurred during modification!":"Hiba történt a modósításkor!"
+    "Error occurred during modification!":"Hiba történt a modósításkor!",
+    "Welcome":"Üdvözlöm",
+    "You have successfully registered!":"Ön sikeresen regisztrált!",
+    "You have successfully logged in!":"Ön sikeresen bejelentkezett!",
+    "Profile modification":"Profil Módosítás",
+    "Please provide your place of birth!":"Add meg a születési helyed!",
+    "Please provide your date of birth!":"Add meg a születési dátumod!",
+    "Please provide your mother's name!":"Add meg édesanyád nevét!",
+    "User information":"Felhasználói adatok",
+    "Operation successful!":"Sikeres művelet!"
+
 }

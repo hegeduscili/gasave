@@ -12,20 +12,20 @@
                 <div class="row">
                     @if (Session::get('successRegister'))
                     <div class="row mt-5">
-                        <h2>Üdvözlöm {{Auth::user()->name}}, Ön sikeresen regisztrált!</h2>
+                        <h2>{{__('Welcome')}}, {{Auth::user()->name}}, {{__('You have successfully registered!')}}</h2>
                     </div>
                     @elseif(Session::get('successLogin'))
                     <div class="row mt-5">
-                        <h2>Üdvözlöm {{Auth::user()->name}}, Ön sikeresen bejelentkezett!</h2>
+                        <h2>{{__('Welcome')}}, {{Auth::user()->name}}, {{__('You have successfully logged in!')}}</h2>
                     </div>
                     @else
                     <div class="row mt-5">
-                        <h2>Üdvözlöm {{Auth::user()->name}}!</h2>
+                        <h2>{{__('Welcome')}}, {{Auth::user()->name}}!</h2>
                     </div>
                     @endif
                 </div>
                 <div class="row mt-5">
-                    <a href="{{ route('edituser') }}" class="btn btn-primary">Profil Módosítás</a>
+                    <a href="{{ route('edituser') }}" class="btn btn-primary">{{__('Profile modification')}}</a>
                 </div>
             </div>
         </div>
