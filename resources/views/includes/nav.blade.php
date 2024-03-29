@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container">
+    <div class="container-fluid">
         <a class="navbar-brand" href="#">GAsAve</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -59,3 +59,15 @@
         @endauth
     </div>
 </nav>
+
+
+<style>
+     .navbar-brand {
+        font-family: 'Rubik Scribble', sans-serif;
+        font-size: 2rem;
+        color: lightgreen; /* A kitöltés világos zöld */
+        -webkit-text-stroke-width: 3px; /* Körvonal vastagsága */
+        -webkit-text-stroke-color: green; /* Körvonal színe */
+        letter-spacing: 2px;
+}
+</style>

@@ -1,5 +1,7 @@
 {
-    "Welcome, if you would like to know how much gasoline you saved by commuting to work by bicycle, on foot, or using public transportation, then you are in the right place!":"Üdvözöllek, ha te is szeretnéd tudni, mennyi benzint sporoltál meg azzal, hogy inkább biciklivel, gyalog vagy tömegközlekedéssel mentél dolgozni, akkor jó helyen jársz!",
+    "If you're curious about how much gas you've saved by opting for biking, walking, or taking public transportation to work, then you've come to the right place!":"Szeretnéd tudni, hogy mennyi benzint spóroltál meg, miközben környezettudatosan közlekedtél? Ha igen, akkor jó helyen jársz!",
+    "Switching to biking, walking, or using public transport not only benefits your health but also your wallet! Calculate how much money you've saved by skipping car usage and take a step towards a more sustainable future.": "Váltás biciklire, gyaloglásra vagy tömegközlekedésre nemcsak az egészségednek tesz jót, de a pénztárcádnak is! Számold ki, hogy mennyi pénzt takarítottál meg azáltal, hogy kihagytad az autóhasználatot, és tegyél egy lépést a fenntarthatóbb jövőért.",
+    "Join us and discover the fantastic opportunities that eco-friendly commuting offers!":"Csatlakozz hozzánk, és fedezd fel, hogy milyen nagyszerű lehetőségeket kínál a környezettudatos közlekedés!",
     "Home":"Kezdőlap",
     "Login":"Belépés",
     "Logout":"Kilépés",
@@ -22,6 +24,7 @@
     "Successful modification!":"Sikeres módosítás!",
     "Error occurred during modification!":"Hiba történt a modósításkor!",
     "Welcome":"Üdvözlöm",
+    "Welcome!":"Üdvözöllek!",
     "You have successfully registered!":"Ön sikeresen regisztrált!",
     "You have successfully logged in!":"Ön sikeresen bejelentkezett!",
     "Profile modification":"Profil Módosítás",
